@@ -18,7 +18,7 @@ def generate_embedding(text: str):
         raise ValueError(f"Request failed with status code {response.status_code}: {response.text}")
     return response.json()
 
-query = "imaginary characters from outer space at war"
+query = "avengers flying and shooting at war"
 
 results = collection.aggregate([
   {"$vectorSearch": {

@@ -18,6 +18,7 @@ def generate_embedding(text: str):
         raise ValueError(f"Request failed with status code {response.status_code}: {response.text}")
     return response.json()
 
+# Enter your search query here
 query = "avengers flying and shooting at war"
 
 results = collection.aggregate([
